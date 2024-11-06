@@ -63,13 +63,39 @@
 }
 
 /* Tablet Styles*/
+@media screen and (min-width: 520px)(max-width: 1024px){
+  .quarter{
+    width: 48%;
+  }
+  .flex-container{
+    height: fit-content;
+  }
+  .third{
+    width: 48%;
+    order: 2;
+  }
 
+  .third:last-child{
+    width: 97%;
+    order:1;
+
+  }
+}
 
 
 
 /* Mobile Styles*/
 
+@media screen and (max-width:480px){
+  .half,
+  .third,
+  .quarter {
+    width: 97%;
+  }
+}
 
-
-
-
+/* COMMENTS
+- Found out what "@media" can do
+- flex-box can make things easier
+- use percentages
+- when changing screeen sizes, make sure to have a max height and max width*/
